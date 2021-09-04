@@ -1,0 +1,12 @@
+a=str(input("Enter your name here"))
+print("Hi,",a)
+b="Welcome to exo calculator"
+print(b.upper())
+c=int(input("Enter your first number here"))
+d=int(input("Enter your second number here"))
+sum=a+b
+diff= c > d
+if diff:
+    print("The diff is",c-d)
+else:
+    print("The diff is",d-c)
