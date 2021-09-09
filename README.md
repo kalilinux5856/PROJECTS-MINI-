@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @WhiteDevil5856
 - 👀 I’m interested in Coding and Hacking
-- 🌱 I’m currently learning Python,c++ and Networking
+- 🌱 I’m currently learning Python,Java and Networking
 - 💞️ I’m looking to collaborate on projects which involve the above languages.
 - 📫 How to reach me via insatagram @ praneeth_10436
 
