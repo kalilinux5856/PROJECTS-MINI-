@@ -1,0 +1,16 @@
+Eng=int(input("Enter your english marks:"))
+Math=int(input("Enter your maths marks:"))
+Phy=int(input("Enter your physics marks:"))
+Chem=int(input("Enter your chemistry marks:"))
+Csc=int(input("Enter your computer science marks:"))
+Total= Eng+Math+Phy+Csc+Chem
+print("Your total score is:",Total)
+Percentage= Total/5
+if Percentage>=60:
+    print("You have secured first place")
+elif Percentage>=45:
+    print("You have secured second place")
+elif Percentage>=33:
+    print("You have secured third place")
+else:
+    print("You have failed")
