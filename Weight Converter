@@ -1,12 +1,18 @@
 Name=input("Name:")
 print("Hi,",Name)
-Your_Weight=input("Enter your weight: ")                    #PLs enter only values
-unit=input("Enter (L)bs or (K)g: ")
-if unit.upper()=="L":
-    conversion1= int(Your_Weight)*0.45
-    print("Your weight in Kg is",{conversion1})
-elif:
-    conversion2= int(Your_Weight)*2.02
-    print("Your weight in Lbs is",{conversion2})
-else:
-    print("Errors found!")
+while True:
+    x=input("Enter your weight: ")     
+    try:
+        Your_Weight = int(x)
+    except Exception as e:
+        print("Errors Found!")
+        #print(e)  incase u want to print the error
+    unit=input("Enter (L)bs or (K)g: ")
+    if unit.upper()=="L":
+        conversion1= int(Your_Weight)*0.45
+        print("Your weight in Kg is",{conversion1})
+    elif unit.upper()=="K":
+        conversion2= int(Your_Weight)*2.02
+        print("Your weight in Lbs is",{conversion2})
+    else: 
+        pass
