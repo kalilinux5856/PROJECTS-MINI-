@@ -1,0 +1,48 @@
+# Program 25
+from random import randint
+
+# create a list of play options
+f = ["Rock", "Paper", "Scissors"]
+
+# assign a random play to the computer
+computer = f[randint(0, 2)]
+
+# set player to False
+player = False
+print("Choose A Play! Rock, Paper, Scissors, Quit?")
+while not player:
+    # set player to True
+    player = input("")
+    if player == computer:
+        print("It's A Tie!")
+        print("The player and the computer have chosen", computer)
+    elif player == "Quit":
+        print("Game Ended." + " Thanks for playing.")
+        break
+    elif player == "Rock":
+        if computer == "Paper":
+            print("You lose!", computer, "covers", player)
+            print("The computer has chosen", computer)
+        else:
+            print("You win!", player, "smashes", computer)
+            print("The computer has chosen", computer)
+    elif player == "Paper":
+        if computer == "Scissors":
+            print("You lose!", computer, "cuts", player)
+            print("The computer has chosen", computer)
+        else:
+            print("You win!", player, "covers", computer)
+            print("The computer has chosen", computer)
+    elif player == "Scissors":
+        if computer == "Rock":
+            print("You lose...", computer, "smashes", player)
+            print("The computer has chosen", computer)
+        else:
+            print("You win!", player, "cuts", computer)
+            print("The computer has chosen", computer)
+    else:
+        print("That's not a valid play." + " Try again!")
+    # player was set to True, but we want it to be False so the loop continues
+    player = False
+    computer = f[randint(0, 2)]
+    print("Choose again Rock, Paper, Scissors, Quit?")
