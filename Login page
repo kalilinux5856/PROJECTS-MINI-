@@ -1,0 +1,37 @@
+set_usr=input("Set your new username: ")
+set_pass=input("Set your new password: ")
+print("Kindly solve this problem for human verification")
+print("Enter the same text as given here -->"+"12Ejd3s4")
+C_ans="12Ejd3s4"
+ans=input()
+mod=False
+count=0
+while not mod:
+    if (ans == C_ans):
+        print("Congrats!!, Your new account has been set")
+        break
+    else:
+        print("Pls try again")
+        mod = False
+        print("Kindly solve this problem for human verification")
+        print("Enter the same text as given here -->" + "12Ejd3s4")
+        C_ans = "12Ejd3s4"
+        ans = input()
+Usr = input("Enter the username: ")
+Pass = input("Enter the password: ")
+Mode = False
+count = 0
+while not Mode:
+    if (Usr == set_usr) and (Pass == set_pass):
+        print("ACCESS GRANTED")
+        break
+    elif (Usr != set_usr) or (Pass != set_pass):
+        print("ACCESS DENIED"+" Pls try again!")
+        count+=1
+        if (count >=3):
+            print("Your device has been locked temporarily")
+            print("Pls call this number for any assistance: +974 66123607")
+            break
+    Mode = False
+    Usr = input("Enter the username: ")
+    Pass = input("Enter the password: ")
