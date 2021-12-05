@@ -1,0 +1,36 @@
+choice=False
+print("1. Add Employee Detail")
+print("2. Show all Employee Detail")
+print("3. Serach Employee")
+print("0. Quit")
+ans=int(input("Enter your choice:"))
+x=list()
+y=list()
+d=dict()
+count=0
+while not choice:
+    if (ans==1):
+        name=input("Enter the name: ")
+        sal=int(input("Enter the salary: "))
+        x.append(name)
+        y.append(sal)
+        d[name]=sal
+        print()
+    elif (ans==2):
+        print(d)
+    elif (ans==3):
+        name_search=input("Enter the name: ")
+        if (name_search in d.keys()):
+            print("Record found")
+            print("Salary: ",d[name_search])
+        elif (name_search not in d.keys()):
+            print("Record not found")
+    elif (ans==0):
+        break
+    choice=False
+    print("1. Add Employee Detail")
+    print("2. Show all Employee Detail")
+    print("3. Serach Employee")
+    print("0. Quit")
+    ans = int(input("Enter your choice:"))
+
