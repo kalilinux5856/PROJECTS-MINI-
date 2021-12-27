@@ -2,18 +2,14 @@ choice=False
 print("1. Add Employee Detail")
 print("2. Show all Employee Detail")
 print("3. Serach Employee")
+print("4) Remove detalis")
 print("0. Quit")
 ans=int(input("Enter your choice:"))
-x=list()
-y=list()
 d=dict()
-count=0
 while not choice:
     if (ans==1):
         name=input("Enter the name: ")
         sal=int(input("Enter the salary: "))
-        x.append(name)
-        y.append(sal)
         d[name]=sal
         print()
     elif (ans==2):
@@ -25,6 +21,10 @@ while not choice:
             print("Salary: ",d[name_search])
         elif (name_search not in d.keys()):
             print("Record not found")
+    elif (ans==4):
+         Name_rem = input("Enter the name to remove: ")
+        if Name_rem in d.keys():
+            d.pop(Name_rem) 
     elif (ans==0):
         break
     choice=False
