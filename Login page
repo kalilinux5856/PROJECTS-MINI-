@@ -1,21 +1,23 @@
+from random import randint
+num=randint(10000,99999)
 set_usr=input("Set your new username: ")
 set_pass=input("Set your new password: ")
 print("Kindly solve this problem for human verification")
-print("Enter the same text as given here -->"+"12Ejd3s4")
-C_ans="12Ejd3s4"
-ans=input()
+print("Enter the same text as given here -->",num)
+C_ans=num
+ans=int(input())
 mod=False
 count=0
 while not mod:
     if (ans == C_ans):
         print("Congrats!!, Your new account has been set")
         break
-    else:
+    elif (ans != C_ans):
         print("Pls try again")
         mod = False
         print("Kindly solve this problem for human verification")
-        print("Enter the same text as given here -->" + "12Ejd3s4")
-        C_ans = "12Ejd3s4"
+        print("Enter the same text as given here -->",C_ans)
+        C_ans=num
         ans = input()
 Usr = input("Enter the username: ")
 Pass = input("Enter the password: ")
